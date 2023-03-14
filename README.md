@@ -1,4 +1,4 @@
-PymolFold
+#PymolFold
 Fold your protein in PyMOL!
 Inspired by ColabFold by Sergey O.
 Visualization inspired by pymol-color-alphafold.
@@ -43,40 +43,40 @@ Thanks to ColabDeisgn by Sergey O.
 cpd for sequence generation Webapp
 Use cpd to design seqeunces will fold into the target structure:
 
-# commands
+ commands
 fetch 1pga.A
 cpd 1pga.A
-# output looks like:
-# >des_0,score=0.72317,seqid=0.6607
-# PTYKLIINGKKIKGEISVEAPDAKTAEKIFKNYAKENGVNGKWTYDESTKTFTIEE
-# >des_1,score=0.73929,seqid=0.6250
-# PTYTLVVNGKKIKGTRSVEAPNAAVAEKIFKQWAKENGVNGTWTYDASTKTFTVTE
-# >des_2,score=0.72401,seqid=0.6429
-# PTYTLKINGKKIKGEISVEAPNAEEAEKIFKQYAKDHGVNGKWTYDASTKTFTVTE
+ output looks like:
+ >des_0,score=0.72317,seqid=0.6607
+ PTYKLIINGKKIKGEISVEAPDAKTAEKIFKNYAKENGVNGKWTYDESTKTFTIEE
+ >des_1,score=0.73929,seqid=0.6250
+ PTYTLVVNGKKIKGTRSVEAPNAAVAEKIFKQWAKENGVNGTWTYDASTKTFTVTE
+ >des_2,score=0.72401,seqid=0.6429
+ PTYTLKINGKKIKGEISVEAPNAEEAEKIFKQYAKDHGVNGKWTYDASTKTFTVTE
 Using esmfold to examin the des_0:
 
-# commands
+ commands
 esmfold PTYKLIINGKKIKGEISVEAPDAKTAEKIFKNYAKENGVNGKWTYDESTKTFTIEE, 1pga_des0
 super 1pga_des0, 1pga.A
 color_plddt 1pga_des0
 
 
 singlemut for scoring a signle mutation Webapp
-# commands
+ commands
 fetch 1pga.A
 singlemut 1pga.A, A, 26, F
-# output maybe (not deterministic):
-# ================================
-# mutation: A_26_F, score: -0.0877
-# ================================
+ output maybe (not deterministic):
+ ================================
+ mutation: A_26_F, score: -0.0877
+ ================================
 dms for in silico deep mutational scan Webapp
-# commands
+ commands
 fetch 1pga.A
 select resi 1-10
 dms sele
-# this might took ~1 min, be pacient ; )
-# output:
-# Results save to '/pat/to/working/dir/dms_results.csv'
+ this might took ~1 min, be pacient ; )
+ output:
+ Results save to '/pat/to/working/dir/dms_results.csv'
 Reference
 @article{lin2022language,
   title={Language models of protein sequences at the scale of evolution enable accurate structure prediction},

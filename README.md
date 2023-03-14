@@ -57,8 +57,8 @@ orient
 ray 1280, 960, async=1
 ```
 
-<img src="./img/esmfold.png" width="400">
-<!-- ![Screenshot0](img/esmfold.png) -->
+<img src="esmfold.png" width="400">
+<!-- ![Screenshot0](esmfold.png) -->
 
 ### 3. Design Your Protein
 
@@ -90,8 +90,8 @@ super 1pga_des0, 1pga.A
 color_plddt 1pga_des0
 ```
 
-<img src="./img/des_demo.png" width="400">
-<!-- ![Screenshot1](img/des_demo.png) -->
+<img src="des_demo.png" width="400">
+<!-- ![Screenshot1](des_demo.png) -->
 
 #### `singlemut` for scoring a signle mutation [`Webapp`](http://103.79.77.89:8501/Single_Point_Mutation)
 
